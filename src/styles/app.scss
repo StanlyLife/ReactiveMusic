@@ -2,4 +2,38 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	user-select: none;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+	scrollbar-width: thin;
+	scrollbar-color: #6279d5 #e0e2e5;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+	width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+	background: #e0e2e5;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: #6279d5;
+	border-radius: 13px;
+	border: 1px solid #ffffff;
+}
+
+img {
+	pointer-events: none;
+}
+
+.App {
+	transition: all 0.5s ease;
+	&.libActive {
+	}
 }

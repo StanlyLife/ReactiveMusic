@@ -1,14 +1,14 @@
-import React from 'react';
+import React from "react";
+import "../styles/_song.scss";
 
-const Player = () => {
-    return(
-        <div className='player'>
+const Song = ({ currentSong }) => {
+	return (
+		<div className="song">
+			<img src={currentSong.cover} alt="cover for {currentSong.name}" />
+			<h1>{currentSong.name}</h1>
+			<h2>{currentSong.artist}</h2>
+		</div>
+	);
+};
 
-            <h1>Song</h1>
-            <h2>song name</h2>
-            <h2>artist</h2>
-        </div>
-    )
-}
-
-export default Player;
+export default Song;
